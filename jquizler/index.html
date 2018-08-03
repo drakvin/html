@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
+<title></title>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jQuizler.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/jQuizler.css" />
+
+<script type="text/javascript">
+var questions = [
+    {
+        type: "choose",
+        question: "<h3>Kas uzrakstīja noveli Nāves ēnā...</h3>",
+        answers: [
+            "Rūdolfs Blaumanis",
+            "Kārlis Baumanis",
+            "Rainis",
+			"Fricis Brīvzemnieks"
+        ],
+        correct: [1]
+    },
+	{
+        type: "choose",
+        question: "<h3>Kas uzrakstīja detektīvu Azazeļ ?</h3>",
+        answers: [
+            "A. Puškins",
+            "B. Akunins",
+            "D. Doncova",
+			"M. Aarons"
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Kādu darbu uzrakstīja D.Fonvizins?</h3>",
+        answers: [
+            "Deguns",
+            "Aurora",
+            "Lempis",
+            "Kvests"
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>Cik Tomu ir Ļeva Tolstoja romānā Karš un miers?</h3>",
+        answers: [
+            "2 un Epilogs",
+            "4 un Epilogs",
+            "6 un Epilogs"
+        ],
+        correct: [2]
+    },
+	{
+        type: "choose",
+        question: "<h3>Kas uzrakstīja Latvijas himnu?</h3>",
+        answers: [
+            "Rihards Bērziņš",
+            "Gunārs Cīrulis",
+            "Kārlis Baumanis",
+			"Augusts Deglavs"
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>Dzīvojama zona ir:</h3>",
+        answers: [
+            "Apbūvēta teritorija, vai tas daļa, kurā iebraušana apzīmeta ar 533. ceļa zīmi, bet izbraukšana - ar 534. ceļa zīmi.",
+            "Apbūvēta pilsētas vai ciema teritorija, kurā iebraukšana apzīmēta ar 519. ceļa zīmi, bet izbraukšana - ar 520. ceļa zīmi",
+			"Visi varianti ir pareizi."
+        ],
+        correct: [1]
+    },
+	{
+        type: "choose",
+        question: "<h3>Faktiskā masa ir:</h3>",
+        answers: [
+            "Atbilstoši Valsts standartam nokomplktēta transportlīdzekļa masa kopā ar vadītāju, bet bez pasažieriem un kravas",
+            "Izgatavotāja noteikta transportlīdzekļa maksimālā pieļaujamā masa kopā ar vadītāju, pasažieriem un kravu.",
+            "Transportlīdzekļa masa kopā ar transportlīdzekļa vadītāju, pasažieriem un kravu."
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>Transportlīdzekļa vadītājam aizliegts:</h3>",
+        answers: [
+            "Pārsniegt transportlīdzekļa izgatavotāja noteikto masimālo braukšanas ātrumu.",
+            "Traucēt ceļu satiksmi, bez vajadzības braucot ar pārāk mazu ātrumu.",
+			"Strauji bremzēt, ja tas nav nepieciešams ceļu satiksmes drošībai.",
+			"Visi varianti ir pareizi"
+        ],
+        correct: [4]
+    },
+	{
+        type: "choose",
+        question: "<h3>Mehāniskos transportlīdzekļus atļauts vilkt:</h3>",
+        answers: [
+            "Izmantojot lokano vai cieto sakabi",
+            "Daļēji novietojot velkamo mehānisko transportlīdzekli uz velkošā transportlīdzekļa uz speciālas atbalstierīces.",
+			"Visi varianti ir pareizi"
+        ],
+        correct: [3]
+    },
+	{
+        type: "choose",
+        question: "<h3>Braukt pa tramvaja pretējā virziena sliežu ceļa klātni ... </h3>",
+        answers: [
+            "Aizliegts",
+			"Atļauts"
+        ],
+        correct: [1] 
+    }
+];
+
+$("document").ready(function(){
+    $("#jQuizler").jQuizler(questions);
+});
+
+</script>
+</head>
+
+<body>
+    <div id="jQuizler" class="main-quiz-holder">
+        <h3>CSN un Literatūras testi</h3>
+		<p><img src="images/os.png" /></p>
+        <button class="btn btn-large">Sakt testu</button>
+    </div>
+</body>
+</html>
