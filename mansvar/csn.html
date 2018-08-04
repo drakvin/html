@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	<title> Test </title>
+<meta charset="utf-8">
+<head>
+	<title>Testa Uzdevums</title>
+<style>
+
+input {
+font-size:14px;
+}
+</style>
+</head>
+
+<body style="background-color: #9494b8;">
+
+<p><h2>Izpildiet CSN testu:</h2></p>
+<button><img src="images/hm.png"  style width="45" height="45" onClick='location.href="index.html"'> </button></p>
+
+<p> Izvēlieties <font size="5" color="red" face="Arial"> a, b, c, d </font>katrā jautājumā:</p>
+<p>Dzīvojama zona ir: <input type="text" autocomplete="off" id="z_1" size="2"></p>
+  <div id="layer1">a. Apbūvēta teritorija, vai tas daļa, kurā iebraušana apzīmeta ar  <img src="images/533.jpg"  style width="40" height="30" > ceļa zīmi, bet izbraukšana - ar <img src="images/534.jpg"  style width="40" height="30" > ceļa zīmi.</div>
+  <div id="layer2">b. Apbūvēta pilsētas vai ciema teritorija, kurā iebraukšana apzīmēta ar <img src="images/519.jpg"  style width="35" height="20" > ceļa zīmi, bet izbraukšana - ar <img src="images/520.jpg"  style width="35" height="20" > ceļa zīmi</div>
+  <div id="layer3">c. Visi varianti ir pareizi.</div>
+
+<p>Faktiskā masa ir: <input type="text" autocomplete="off" id="z_2" size="2"></p>
+  <div id="layer1">a. Atbilstoši Valsts standartam nokomplktēta transportlīdzekļa masa kopā ar vadītāju, bet bez pasažieriem un kravas.</div>
+  <div id="layer2">b. Izgatavotāja noteikta transportlīdzekļa maksimālā pieļaujamā masa kopā ar vadītāju, pasažieriem un kravu.</div>
+  <div id="layer3">c. Transportlīdzekļa masa kopā ar transportlīdzekļa vadītāju, pasažieriem un kravu.</div>
+
+<p>Transportlīdzekļa vadītājam aizliegts: <input type="text" autocomplete="off" id="z_3" size="2"></p>
+  <div id="layer1">a. Pārsniegt transportlīdzekļa izgatavotāja noteikto masimālo braukšanas ātrumu.</div>
+  <div id="layer2">b. Traucēt ceļu satiksmi, bez vajadzības braucot ar pārāk mazu ātrumu.</div>
+  <div id="layer3">c. Strauji bremzēt, ja tas nav nepieciešams ceļu satiksmes drošībai.</div>
+  <div id="layer3">d. Visi varianti ir pareizi</div>
+
+  <p>Braukt pa tramvaja pretējā virziena sliežu ceļa klātni ... <input type="text" autocomplete="off" id="z_4" size="2"></p>
+  <div id="layer1">a. Aizliegts</div>
+  <div id="layer2">b. Atļauts</div>
+
+  <p>Mehāniskos transportlīdzekļus atļauts vilkt: <input type="text" autocomplete="off" id="z_5" size="2"></p>
+  <div id="layer1">a. Izmantojot lokano vai cieto sakabi.</div>
+  <div id="layer2">b. Daļēji novietojot velkamo mehānisko transportlīdzekli uz velkošā transportlīdzekļa uz speciālas atbalstierīces.</div>
+  <div id="layer3">c. Visi varianti ir pareizi</div>
+<br></br>
+<button onClick="check();">Parbaudīt</button>
+<div id="rezultat"></div>
+
+<script>
+function check(){
+atbilde_1 = "a"; 
+atbilde_2 = "c";
+atbilde_3 = "d";
+atbilde_4 = "a";
+atbilde_5 = "c";
+true_1 = document.getElementById('z_1').value;
+true_2 = document.getElementById('z_2').value;
+true_3 = document.getElementById('z_3').value;
+true_4 = document.getElementById('z_4').value;
+true_5 = document.getElementById('z_5').value;
+ball = 0;
+if(true_1 == atbilde_1){
+ball +=1;
+}
+if(true_2 == atbilde_2){
+ball +=1;
+}
+if(true_3 == atbilde_3){
+ball +=1;
+}
+if(true_4 == atbilde_4){
+ball +=1;
+}
+if(true_5 == atbilde_5){
+ball +=1;
+}
+kopa = 5;
+procents = ball/kopa * 100;
+
+document.getElementById('rezultat').innerHTML = "Uzdevums izpildīts pareizi uz " + procents + "%.";
+}
+</script>
+
+			
+<!--footer-->
+
+				<p> <font size="2" face="Tahoma"> © 2018. All rights reserved | Design by VitālijsB </font> </p>
+		
+<!--//footer-->
+</body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Testa Uzdevums</title>
+<style>
+
+input {
+font-size:14px;
+}
+</style>
+</head>
+
+<body style="background-color: #9494b8;">
+
+<p><h2>Izpildiet Literatūras testu:</h2></p>
+<button><img src="images/hm.png"  style width="45" height="45" onClick='location.href="index.html"'> </button></p>
+
+<p> Izvēlieties <font size="5" color="red" face="Arial"> a, b, c, d </font>katrā jautājumā:</p>
+<p>Kas usrakstīja detektīvu "Azazeļ"?: <input type="text" autocomplete="off" id="z_1" size="2"></p>
+  <div id="layer1">a. B. Akunins</div>
+  <div id="layer2">b. A. Puškins</div>
+  <div id="layer3">c. D.Doncova</div>
+  <div id="layer4">d. M. Aarons</div>
+
+<p>Kadu darbu uzrakstīja D.Fonvizins?: <input type="text" autocomplete="off" id="z_2" size="2"></p>
+  <div id="layer1">a. Deguns</div>
+  <div id="layer2">b. Lempis</div>
+  <div id="layer3">c. Aurora</div>
+  <div id="layer4">d. Kvests</div>
+
+<p>Cik Tomu ir Ļeva Tolstoja romānā "Karš un miers"?: <input type="text" autocomplete="off" id="z_3" size="2"></p>
+  <div id="layer1">a. 2 un Epilogs</div>
+  <div id="layer2">b. 4 un Epilogs</div>
+  <div id="layer3">c. 6 un Epilogs</div>
+
+  <p>Kas uzrakstija noveli "Nāves ēnā"?: <input type="text" autocomplete="off" id="z_4" size="2"></p>
+  <div id="layer1">a. Rūdolfs Rlaumanis</div>
+  <div id="layer2">b. Kārlis Baumanis</div>
+  <div id="layer3">c. Rainis</div>
+  <div id="layer4">d. Fricis Brīvzemnieks</div>
+
+  <p>Kas uzraktīja Latvijas himnu?: <input type="text" autocomplete="off" id="z_5" size="2"></p>
+  <div id="layer1">a. Rihards Bērziņš</div>
+  <div id="layer2">b. Gunārs Cīrulis</div>
+  <div id="layer3">c. Kārlis Baumanis</div>
+  <div id="layer4">d. Augusts Deglavs</div>
+<br></br>
+<button onClick="check();">Parbaudīt</button>
+<div id="rezultat"></div>
+
+<script>
+function check(){
+atbilde_1 = "a"; 
+atbilde_2 = "b";
+atbilde_3 = "b";
+atbilde_4 = "a";
+atbilde_5 = "c";
+true_1 = document.getElementById('z_1').value;
+true_2 = document.getElementById('z_2').value;
+true_3 = document.getElementById('z_3').value;
+true_4 = document.getElementById('z_4').value;
+true_5 = document.getElementById('z_5').value;
+ball = 0;
+if(true_1 == atbilde_1){
+ball +=1;
+}
+if(true_2 == atbilde_2){
+ball +=1;
+}
+if(true_3 == atbilde_3){
+ball +=1;
+}
+if(true_4 == atbilde_4){
+ball +=1;
+}
+if(true_5 == atbilde_5){
+ball +=1;
+}
+kopa = 5;
+procents = ball/kopa * 100;
+
+document.getElementById('rezultat').innerHTML = "Uzdevums izpildīts pareizi uz " + procents + "%.";
+}
+</script>
+
+			
+<!--footer-->
+	
+	
+				<p> <font size="2" face="Tahoma"> © 2018. All rights reserved | Design by VitālijsB </font> </p>
+		
+<!--//footer-->
+</body>
+</html>
